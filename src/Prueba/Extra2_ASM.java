@@ -3,10 +3,10 @@ import java.util.*;
 public class Extra2_ASM {
 	public static Scanner teclado=new Scanner (System.in);
 	public static void main(String[] args) {
-		final int TARIFA_NORMAL = 16;
-		final int TARIFA_EXTRA = 20;
-		final int HORAS_NORMALES = 40;
-		System.out.print("Introduce el n˙mero de horas trabajadas en la semana: ");
+		int TARIFA_NORMAL = 16;
+		int TARIFA_EXTRA = 20;
+		int HORAS_NORMALES = 40;
+		System.out.print("Introduce el n√∫mero de horas trabajadas en la semana: ");
 		int horasTrabajadas = teclado.nextInt();
 
 		int salarioNormal = 0;
@@ -20,7 +20,7 @@ public class Extra2_ASM {
 			salarioExtra = (horasTrabajadas - HORAS_NORMALES) * TARIFA_EXTRA;
 		}
 		salarioTotal = salarioNormal + salarioExtra;
-		System.out.println("\n--- C¡LCULO DE SALARIO ---");
+		System.out.println("\n--- C√ÅLCULO DE SALARIO ---");
 		System.out.println("Salario por horas normales: " + salarioNormal + " euros");
 		System.out.println("Salario por horas extras: " + salarioExtra + " euros");
 		System.out.println("Salario total: " + salarioTotal + " euros");
